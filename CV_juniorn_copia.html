@@ -33,10 +33,29 @@
                     border: 3px solid #245b87;
                 }
 
+                .contacto {
+                    text-align: center;
+                    font-size: 14px;
+                    color: #607086;
+                    margin-top: 12px;
+                    margin-bottom: 18px;
+                }
+
+                .logro {
+                    background-color: #e8f1f8;
+                    color: #245b87;
+                    padding: 10px 15px;
+                    border-left: 4px solid #245b87;
+                    border-radius: 5px;
+                    margin-top: 15px;
+                }
+
                 h1 {
-                    margin-bottom: 4px;
+                    margin-top: 12px;
+                    margin-bottom: 8px;
                     color: #245b87;
                     font-size: 2rem;
+                    text-align: center;
                 }
 
                 h2 {
@@ -54,13 +73,32 @@
                 }
 
                 li {
-                    padding: 3px 0;
+                    padding: 5px 0;
+                    line-height: 1.7;
+                }
+
+                li::marker {
+                    color: #245b87;
                 }
 
                 @media (max-width: 600px) {
                     body {
                         margin: 16px;
                         padding: 20px;
+                    }
+
+                    h1 {
+                        font-size: 1.6rem;
+                    }
+
+                    .foto-cv {
+                        width: 120px;
+                        height: 120px;
+                    }
+
+                    .contacto {
+                        font-size: 13px;
+                        overflow-wrap: anywhere;
                     }
                 }
             </style>
@@ -72,9 +110,16 @@
             </div>
 
             <h1>MY CV </h1>
-            <p> <strong>Junior Developer</strong> </p>
-            <p> Junior Moises Nuñez Escobar| junior_nunez@unitec.edu | +504 9659-4856 | SPS, Honduras</p>
-            <p><strong>2nd Place Honduras Hackathon 2026</strong></p>
+            <p style="text-align: center;"> <strong>Junior Developer</strong> </p>
+            <p class="contacto">
+                Junior Moises Nuñez Escobar |
+                junior_nunez@unitec.edu |
+                +504 9659-4856 |
+                SPS, Honduras
+            </p>
+            <p class="logro">
+                <strong>2nd Place Honduras Hackathon 2026</strong>
+            </p>
             <br>
             <h2>Skill Highlights</h2>
             <ul>
